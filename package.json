@@ -26,6 +26,6 @@
     "tailwindcss": "^3.3.0"
   },
   "prisma": {
-    "schema": "D:/FDMS/src/app/schema.prisma"
+    "schema": "D:/bm/prisma/schema.prisma"
   }
 }

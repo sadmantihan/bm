@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="flex gap-4 text-sm">
                 <button className="bg-primary flex items-center gap-2 text-white px-8 py-2 rounded-full">
                     Be a shareholder
-                    <Right />
+                    {/* <Right /> */}
                     </button>
                 <button className="flex gap-2 px-5 py-2 font-semibold bg-black-200 p-4 rounded-lg text-center group hover:shadow-md hover:shadow-black/25">
                     Learn more
