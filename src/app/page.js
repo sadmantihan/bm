@@ -1,7 +1,7 @@
 import Hero from "../components/layout/Hero"
 import SectionHeaders from "../components/layout/SectionHeaders"
 import TeamWork from "../components/layout/TeamWork"
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,15 +11,8 @@ export default function Home() {
         <section className="text-center my-16">
           <SectionHeaders
             subHeader={'Our story'}
-            mainHeader={'About us'} />
-        <div className="text-gray-500 max-w-xl mx-auto mt-4 flex-col gap-4">
-        <p>
-            Lorem ipsum dolor sit
-          </p>
-          <p>
-            Lorem ipsum
-          </p>
-        </div>
+            mainHeader={<Link href="/aboutus">About us</Link>} />
+
           
         </section>
         <section className="text-center my-8">
