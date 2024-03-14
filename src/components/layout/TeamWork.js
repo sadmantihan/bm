@@ -1,36 +1,25 @@
 import SectionHeaders from "./SectionHeaders";
 import Link from "next/link";
-
+import AdministrativeWork from "../../components/works/AdministrativeWork"; // Updated import path
+import ElectricalMechanicalTasks from "../../components/works/ElectricalMechanicalTasks";
+import InteriorDesign from "../../components/works/InteriorDesign";
+import ProjectCoordination from "../../components/works/ProjectCoordination";
+import SiteSupervision from "../../components/works/SiteSupervision";
+import SystemNetwork from "../../components/works/SystemNetwork";
 export default function TeamWork() {
-  const teamWorks = [
-    "Project Coordination",
-    "Site Supervision and Construction",
-    "Interior Design and Architecture",
-    "System Analysis and Network",
-    "Electrical and Mechanical Tasks",
-    "Safety Assurance",
-    "Administrative Work and Inventory Management",
-    "Budget and Financial Management",
-    "Marketing and Branding",
-    "Quality Assurance",
-  ];
-
-  return (
-    <section className="flex flex-col items-center justify-center bg-gray-100 py-10">
-      <div className="text-center mb-8">
-        <SectionHeaders subHeader={'check out'} mainHeader={'Team Works'} />
+  return(
+    <section className="">
+      <div className="text-center mb-4">
+        <h3 className="uppercase text-gray-500 font-semibold leading-4">Check out</h3>
+        <h2 className="text-primary font-bold text-4xl">Team Works</h2>
       </div>
-      <div className="bg-primary-200 p-4 rounded-lg text-center">
-        {teamWorks.map((work, index) => (
-          <Link href={`/${work.toLowerCase().replace(/\s/g, "-")}`} key={index}> {/* Link to the new page */}
-            <button
-              key={index}
-              className="p-4 mx-2 my-2 rounded-full bg-white shadow-md focus:outline-none bg-gray-200 p-4 rounded-lg text-center group hover:bg-white hover:shadow-md hover:shadow-black/25 transiton-all"
-            >
-              <p className="text-center">{work}</p>
-            </button>
-          </Link>
-        ))}
+      <div className="grid grid-cols-3 gap-4">
+       <AdministrativeWork />
+       <ProjectCoordination />
+       <ElectricalMechanicalTasks />
+       <SystemNetwork />
+       <SiteSupervision />
+       <InteriorDesign />
       </div>
     </section>
   );

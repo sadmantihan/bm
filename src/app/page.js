@@ -20,10 +20,7 @@ export default function Home() {
             subHeader={'Don\'t hesitate'}
             mainHeader={'Contact us'} />
             <div className="mt-8">
-            <a className="text-4xl underline text-gray-500" href="tel:+8801704776493">+88 017 0477 6493</a>
-            </div>
-            <div className="mt-8">
-            <a className="text-4xl underline text-gray-500 mt-16" href="tel:+8801883805087">+88 018 8380 5087</a>
+            <a className="text-4xl underline text-gray-500" href="mailto:buildmaster.reply@gmail.com">buildmaster.reply@gmail.com</a>
             </div>
         </section>
         
